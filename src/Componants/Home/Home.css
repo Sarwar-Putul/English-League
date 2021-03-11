@@ -1,0 +1,26 @@
+.header{
+    background-image:url(../image/title.jpg);
+    width: 1640px;
+    height: 257px;
+    color:white;
+    text-align: center;
+}
+.container{
+    display:grid;
+    grid-template-columns: auto  auto auto;
+    width: 1440px;
+}
+*{
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width:768px){
+    .header {
+        width:768px;
+        height: 240px;
+    }
+    .container{
+        grid: none;
+    }
+
+}
