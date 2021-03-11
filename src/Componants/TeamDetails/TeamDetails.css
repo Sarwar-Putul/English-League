@@ -36,12 +36,12 @@ body{
 }
 .description{
     color: #c6c6c6;
-    line-height:28px;
+    line-height:25px;
     font-family: Montserrat;
     font-style: normal;
     margin-left: 20px;
-    width:1440px;
-    height: ;
+    width:1540px;
+    height: auto;
 
 }
 .social-media{
