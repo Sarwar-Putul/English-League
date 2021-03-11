@@ -1,5 +1,5 @@
 body{
-    width: 1640px
+    width: 1640px;
 }
 .team-container{
     background-color: #0E0A2B;
@@ -41,7 +41,7 @@ body{
     font-style: normal;
     margin-left: 20px;
     width:1440px;
-    height: 500px
+    height: ;
 
 }
 .social-media{
@@ -65,6 +65,7 @@ body{
     }
     .team-container{
         width:768px;
+        background-color: #0E0A2B;
     }
     .description{
         width:700px;
@@ -76,7 +77,11 @@ body{
         text-align: center;
     }
     .social-media{
-        align: center;
+        position: absolute;
+        width: 235px;
+        height: 65px;
+        left: 63px;
+        top: 2126px;
     }
 
 }

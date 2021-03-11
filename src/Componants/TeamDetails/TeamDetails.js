@@ -17,6 +17,9 @@ const TeamDetails = () => {
     }, []);
 
     const {strTeam, intFormedYear, strTeamLogo,strCountry,strSport, strGender, strDescriptionEN} = team;
+
+    const clubType = team.strGender;
+
     return (
         <div className="team-container">
             <div className="team-logo">
@@ -32,16 +35,19 @@ const TeamDetails = () => {
                             <p><FontAwesomeIcon icon={faVenusMars} /> Gender: {strGender}</p>
                         </div>
                         <div className="type-picture">
-                            <img style={{ height:240, width:442, }} src="https://e0.365dm.com/20/12/2048x1152/skysports-premier-league-tottenham_5206561.jpg" alt=""/>
+                            {
+                                clubType ? <img style={{ height:240, width:442, }} src="https://e0.365dm.com/20/12/2048x1152/skysports-premier-league-tottenham_5206561.jpg" alt=""/> : <img style={{ height:240, width:442, }} src="https://assets.manutd.com/AssetPicker/images/0/0/10/212/709671/WT-Social-Posts-V2-Square-Post_MID31531489570113_large.jpg" alt=""/>
+                            }
                         </div>
                 </div>
                 <div className="description">
                     <p><small>{strDescriptionEN}</small></p>
+                    <p><small>{strDescriptionEN}</small></p>
                 </div>
                 <div className="social-media">
                     <Link to ={"https://www.facebook.com"}><FontAwesomeIcon icon={faFacebook} /> </Link>
-                    <Link to ={"/twitter.com"}><FontAwesomeIcon icon={faTwitterSquare} /> </Link>
-                    <Link to ={"/youtube.com"}><FontAwesomeIcon icon={faYoutube} /> </Link>
+                    <Link to ={"https://twitter.com"}><FontAwesomeIcon icon={faTwitterSquare} /> </Link>
+                    <Link to ={"https://youtube.com"}><FontAwesomeIcon icon={faYoutube} /> </Link>
                 </div>
             </div>
         </div>

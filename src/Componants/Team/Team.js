@@ -15,7 +15,7 @@ const cardStyle ={
     borderRadius: '20px',
     boxShadow: '5px 5px 10px lightGray',
     padding: '20px',
-    alignItems: 'center',
+    textAlign:'center',
 }
 
 
